@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="165.691" tests="3" skipped="0" failures="1" errors="0">
+<testcase classname="Validation of login functionality in facebook application" name="Tc01_Validation of login functionality with valid credientials" time="90.698">
+<system-out><![CDATA[
+Given User launch the chrome browser and maximize window....................passed
+When User launch the facebook application...................................passed
+And User enter the valid username and valid password........................passed
+And User click the login button.............................................passed
+And User Check whether the page navigate to flipkart home page..............passed
+Then User close the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validation of login functionality in facebook application" name="Tc02_Validation of login functionality with invalid credientials - Example #1.1" time="23.179">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),'entered is incorrect')]&quot;}
+  (Session info: chrome=124.0.6367.208)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.227.176', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72d9cd498a8768a969e2117c955f0974
+*** Element info: {Using=xpath, value=//div[contains(text(),'entered is incorrect')]}">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'entered is incorrect')]"}
+  (Session info: chrome=124.0.6367.208)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.227.176', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72d9cd498a8768a969e2117c955f0974
+*** Element info: {Using=xpath, value=//div[contains(text(),'entered is incorrect')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.stepdefinition.FaceBookLogin.user_check_whether_error_message_is_displayed(FaceBookLogin.java:74)
+	at ✽.User check whether error message is displayed(file:///C:/Users/ELCOT/eclipse-workspace/CucumberProject/src/test/resources/Sample.feature:17)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launch the chrome browser and maximize window....................passed
+When User launch the facebook application...................................passed
+And User enter invalid "kumar@gmail.com" and "selenium".....................passed
+And User cliks login button.................................................passed
+And User check whether error message is displayed...........................failed
+Then User close the browser.................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Validation of login functionality in facebook application" name="Tc02_Validation of login functionality with invalid credientials - Example #1.2" time="50.228">
+<system-out><![CDATA[
+Given User launch the chrome browser and maximize window....................passed
+When User launch the facebook application...................................passed
+And User enter invalid "ram@gmail.com" and "java"...........................passed
+And User cliks login button.................................................passed
+And User check whether error message is displayed...........................passed
+Then User close the browser.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
